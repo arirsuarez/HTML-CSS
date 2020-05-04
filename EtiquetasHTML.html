@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        HTML ETIQUETAS
+    </title>
+</head>
+
+<body>
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+    <h1>Etiquetas</h1>
+    <p>Acá va todo el párrafo</p>
+    <p>Si quiero poner una línea entre un párrafo y otro la etiqueta es hr / </p>
+    <hr />
+    <p>Para hacer un salto de línea (de párrafo) abrimos otro párrafo. <br />
+        <p>Si quiero ir al siguiente renglón la etiqueta es br / . <br />
+            <!-- Etiqueta de comentario -->
+            <b>Negrita "b" </b> <br />
+            <blockquote>Cuando queremos hacer una cita usamos el blockquote (alínea a la derecha)</blockquote> <br />
+            <i>Italic es con "i"</i> <br />
+            <pre>Preformateado es "pre" se ve como escrito a máquina</pre> <br />
+            <small>Letra chica "small"</small><br />
+            <u>Subrayado "u"</u><br />
+        </p>
+        <div>Para no poner "br" en cada salto de línea</div>
+        <div>se puede separar por secciones con la etiqueta "div"</div>
+        <div>Div3</div>
+        <div>Div4 en ninguna de estas puse el br /</div>
+        <hr />
+        <p>
+            <div>Para poder crear un campo de texto "libre" se usa dentro de "form" la etiqueta "input"
+                <br />
+                Le podemos especificar un tipo con type dentro de la etiqueta de apertura. <br />
+                "number" <br />
+                "password" <br />
+                "text"<br />
+                "submit" agrega un botón que envía el valor del form (para cambiar el texto que muestra el botón se
+                ingresa el value="" dentro de la etiqueta<br />
+                "email"<br /> </div>
+        </p>
+        <div>"textarea" agrega un espacio delimitado para ingresar texto</div>
+        <div>"button" agrega un botón igual al de submit. Para cambiar el texto del botón lo ingresamos entre la
+            apertura y cierre de etiqueta. Se le pueden pasar más elementos html que al submit</div>
+        <!--Falta agregar la aclaración de la etiqueta "Select" minuto 3:24 del video 15-->
+
+        <div>"select" nos muestra un listado de opciones, para agregar opciones lo hacemos con la etiqueta "option"
+            dentro de la etiqueta "select". Dentro de la etiqueta de "option" tenemos que indicar el valor que contiene
+            esa opción cuando esté seleccionada "value="""</div>
+        <div>"label" etiqueta los "inputs" y muestra en la página el string que le pasemos entre las etiquetas de
+            apertura y cierre</div>
+        <div>"placeholder" = "hint" se ingresa como valor dentro de la etiqueta del input</div>
+        <div>"fieldset" agrupa los formularios que estén dentro de su etiqueta de apertura y cierre, delimitandolos en
+            un espacio específico.</div>
+        <div>"legend" dentro de la etiquieta "fieldset" se puede usar legend para ponerle un título (ubicándolo entre
+            etiqueta
+            de apertura y de cierre) </div>
+    </p>
+    <p>
+        <div>"img" para insertar una imágen, se le pasa la fuente con la propiedad "src="" "
+            www.fuenteDeLaImagen/com/000(ancho)/000(alto)</div>
+        <div>"a" se utiliza para ingresar url, se ingresa como atributo con "hrfef="" " la dirección a la que queremos
+            apuntar, propia o externa
+            y se ingresa el texto a mostrar entre la etiqueta de apertura y cierre. </div>
+        <div>"ul" y "ol" lista desordenada (con puntos) o lista ordenada (con números) respectivamente. Entre la
+            etiqueta de apertura y cierre se
+            se listan los elementos deseados ingresandolos dentro de la apertura y cierre de "li"
+        </div>
+        <div>"table" se usa para crear una tabla, dentro de las etiquetas de apertura y cierre se detallan las
+            siguientes etiquetas. <br />
+            "thead" indica que es la primera fila entre las etiquetas de aper y cierre indicamos las columnas con "tr".
+            <br />
+            "tr" indica la fila, entre las etiquetas de ap y cie agregamos un "th" para ingresar la información de cada
+            columna<br />
+            "th" indica las columnas, entre las etiquetas de ap y cie ingresamos la información que queremos que
+            muestre. <br />
+            "tbody" después de cerrar "thead" indica las siguientes filas (también con "tr") y sus columnas con "td".
+            <br />
+            "td" indica las columnas, entre las etiquetas de ap y cie ingresamos la información que queremos que
+            muestre. <br />
+            "tfoot" después de cerrar "tbody" ingresamos "tfoot" que indica el cierre de la tabla. Mismo sistema que
+            "tbody" <br />
+            "tr" indica fila "th" columnas.
+        </div>
+
+
+    </p>
+    <hr />
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label>Nombre</label>
+            <input type="" placeholder="Juan Perez"> <br />
+            <label>Edad</label>
+            <input type="number" placeholder="25"> <br />
+            <label>Password</label>
+            <input type="password"> <br />
+        </fieldset>
+        <input type="submit"> <br />
+        <input type="search"> <br />
+        <textarea></textarea>
+        <button></button>
+        <select>
+            <option></option>
+            <option value="yoda">Yoda</option>
+            <option value="chewie">Chewie</option>
+            <option value="luke">Luke</option>
+            <option value="r2d2">R2D2</option>
+        </select>
+    </form>
+
+    <hr />
+    <hr />
+
+    <div><img src="http://placekitten.com/200/200" /></div>
+    <div><a href="https://www.google.com">Google</a></div>
+    <div>
+        <ul>
+            <li>Primero</li>
+            <li>El N 2 en tu lista</li>
+            <li>Tres son multitud</li>
+        </ul>
+    </div>
+    <div>
+        <ol>
+            <li>Primero</li>
+            <li>El N 2 en tu lista</li>
+            <li>Tres son multitud</li>
+        </ol>
+    </div>
+    <div>
+        <fieldset>
+            <legend>TABLAS</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <th>DIA</th>
+                        <th>MES</th>
+                        <th>AñO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Enero</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Enero</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Enero</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Enero</td>
+                        <td>2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Días totales</td>
+                        <td> </td>
+                        <td> 04 </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+    </div>
+</body>
+
+</html>
