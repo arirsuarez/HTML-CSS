@@ -1,0 +1,17 @@
+body{
+    background-color: beige; 
+    color: brown;
+}
+
+#parrafo {
+    color: #ff0000;
+}
+
+.span{
+    color: rgb(0, 0, 0);
+}
+
+.caja {
+    margin: 8px;
+    background-color: coral;
+}

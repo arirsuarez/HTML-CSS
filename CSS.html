@@ -1,0 +1,54 @@
+<!doctype htm>
+<html>
+
+<head>
+    <title>CSS</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+</head>
+
+<body>
+    <p>Este es un párrafo</p>
+    <span>Este es un Span</span>
+    <p>Para cargar código CSS en html se ingresa dentro del head con la etiqueta <b>"link"</b> apuntando al archivo CSS
+        con
+        <b>"href="nombreDelArchivo.CSS"</b> y con <b>"type="text/css"</b>. <br />
+        "SELECTORES" instrucción que se utiliza en CSS para seleccionar la etiqueta de HTML, tienen el mismo nombre.
+        Para darle estilo a una determinada etiqueta, en el archivo CSS: <br />
+        <b>body {<br />
+            background-color: #código hexagesimal; <br />
+            color: #códigohexa; (cambia el color de la letra) <br />
+            } <br />
+            <br /> </b>
+        Podemos customizar por id o por class ingresando como atributo dentro de la etiqueta de apertura
+        <b>"id="textolibre"</b> o <b>"class="textolibre"</b>. <br />
+    </p>
+
+    <hr />
+    <hr />
+    <h3>Ejemplificación</h3>
+    <p id="parrafo">En html: <b>"id="parrafo"</b>. <br />
+        En CSS: <b>"#parrafo { <br />
+            color: #ff0000; <br />}</b> <br />
+        Para hacer referencia al id desde CSS se lo llama con el símbolo <b> " # " </b></p>
+    <span class="span"> En html: <b>"class="spanuno"</b>. <br />
+        En CSS: <b>".spanuno{ <br /> 
+            color: #ffffff; <br />} <br /> </b>
+    Para hacer referencia a la class desde CSS se lo llama con el símbolo <b>" . " </b>. <br />
+    Todos los elementos con el valor de <b>"class="span" </b> tendrán el mismo formato.</span>
+
+    <hr />
+
+    <h3>Cajas</h3>
+    <p>Utilizamos el concepto "cajas" para el diseño (margenes, fondo, bordes, etc.)</p>
+    <p class="caja">
+        En html: <b>"class="caja"</b>. <br />
+        En CSS: <b>".caja { <br />
+            margin: 8px; <br />
+            padding: 8px; <br />
+            color: #aaf; <br />
+            }</b> <br />
+        </p>
+
+</body>
+
+</html>
