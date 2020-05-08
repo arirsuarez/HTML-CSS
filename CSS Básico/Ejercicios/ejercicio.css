@@ -1,0 +1,34 @@
+body{
+    background-color: gray;
+}
+
+.cajaflotante{
+    background-color: white;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-top: 0px;
+}
+
+.title{
+    padding: 8px;
+}
+
+.footer{
+    padding: 8px;
+    border-top: solid 1px #eee;
+}
+
+.buttonprim{
+    background-color: #0090FF;
+    border: none;
+    padding: 5px;
+    color: #fff;
+}
+
+.buttonsec{
+    background-color: #aaa;
+    border: none;
+    padding: 5px;
+    color: #000000;
+}
