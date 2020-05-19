@@ -91,3 +91,18 @@ table th{
     padding-bottom: 6px;
 }
 
+#width{
+    width: 100%;
+    background-color: #f55;
+    color: beige;
+    text-align: center;
+}
+
+#maxwidth{
+    max-width: 1800px;
+    background-color: rgb(180, 59, 59);
+    color: beige;
+    text-align: center;
+    margin: auto;
+}
+

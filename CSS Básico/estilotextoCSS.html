@@ -1,4 +1,4 @@
-<!doctype htm>
+<!doctype html>
 <html>
 
 <head>
@@ -52,6 +52,9 @@
         </tr>
     </table>
     <br />
+
+    <p id="width"><b>WIDTH</b></p>
+    <p id="maxwidth"><b>MAX-WIDTH</b></p>
     <div>
         <h2>Propiedades CSS</h2>
         <hr />
@@ -140,6 +143,39 @@
             <b>padding-bottom:</b> 6px; <br />
         }<br /> <br />
     </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <h3>Display</h3>
+    <div>
+    Los elementos se dividen en dos formas de display, bloc (usan el 100% width) o inline (toma lo que utiliza el texto). Estás propiedades vienen intrínsecas con el elemento, pero puede ser modificado desde CSS. <br /> 
+    <i>Los elementos se pueden volver invisibles desde CSS con display: none;</i><br /> <br />
+    Los <b>bloques</b> se muestran uno abajo del otro. <br />
+            Párrafos: &lt;p /&gt; <br />
+            Títulos: &lt;h1-6 /&gt; <br />
+            Div: &lt;div /&gt; <br />
+            Formularios: &lt;form /&gt; <br />
+            Header: &lt;header /&gt; <br />
+            Footer: &lt;footer /&gt; <br />
+            Section: &lt;section /&gt; <br /> <br />
+
+    Los <b>inlines</b> se muestran uno al lado del otro. <br />
+            Span: &lt;span /&gt; <br />
+            Links: &lt;a /&gt; <br />
+            Imágenes: &lt;img /&gt; <br />
+    </div> 
+
+    <h3>Utilización de Pantalla</h3>
+
+    <div>
+        width != max-width <br />
+        El atributo <b>width</b> indica los pixeles que ocupa el elemento. <br />
+        El atributo <b>max-width</b> indica el porcentaje de pantalla que utiliza el elemento, aunque se indique con px. <br />
+        <i>Si utilizamos max-width y achicamos la pantalla va a seguir utilizando el mismo porcentaje que con la pantalla completa, no así el width</i>
+    </div>
+
 
 </body>
 
