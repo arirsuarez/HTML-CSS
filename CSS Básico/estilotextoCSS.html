@@ -1,15 +1,146 @@
 <!doctype htm>
 <html>
-<head> <title>Estilo texto CSS</title>
-<link rel="stylesheet" href="style.css" type="text/css"/> </head>
+
+<head>
+    <title>Estilo texto CSS</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
 <body>
-    <p>Diganme que no es en serio, que me muestran tantos fines sin proporcionar los medios</p>
-    <p>
-        <h3>Propiedades CSS</h3>
+    <p>The sound of strangers sending nothing to my mind <br />
+        Just another mad mad day on the road <br />
+        I am just living to be lying by your side <br />
+        But I'm just about a moonlight mile on down the road</p>
+    <div> <a href="https://www.instagram.com/arisuarez_">Instagram!</a> </div>
+
+    <br />
+
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <br />
+
+    <table>
+        <tr>
+            <th>Banda</th>
+            <th>Disco</th>
+            <th>Año</th>
+        </tr>
+
+        <tr>
+            <td>The Beatles</td>
+            <td>Rubber Soul</td>
+            <td>1965</td>
+        </tr>
+        <tr>
+            <td>The Rolling Stones</td>
+            <td>Sticky Fingers</td>
+            <td>1971</td>
+        </tr>
+        <tr>
+            <td>Pearl Jam</td>
+            <td>Gigaton</td>
+            <td>2020</td>
+        </tr>
+        <tr>
+            <td>The Dear Hunter</td>
+            <td>Act I</td>
+            <td>2006</td>
+        </tr>
+    </table>
+    <br />
+    <div>
+        <h2>Propiedades CSS</h2>
+        <hr />
+        <h3>Párrafo</h3>
         <div> p { <br />
-        color: #222fff; <br />
-        text-align: center; <br />
+            color: #110420; <br />
+            text-align: center; <br />
+            text-indent: 0px; (sangría). <br />
+            line-height: 1.4; (interlineado). <br />
+            font-size: 1.5em; (Se suele usar em en vez de px para que vaya adaptándose proporcionalmente a la config que
+            le dé el usuario). <br />
+            font-weight: 100 al 900; (grosor de la letra, multiplos de 100 entre 100 y 900, no todos los tipos de letra
+            aceptan los valores intermedios). <br />
+            word-spacing: 3px; <br />
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); <br />
+            } </div>
+        <br />
+
+        <h3>Links</h3>
+
+        <div> <b>a</b> (Estado genérico del link) { <br />
+            text-decoration: underline; <br />
+            text-transform: uppercase / lowercase / capitalize; <br />
+            letter-spacing: 3px; <br />
+            }</div> <br />
+        <div> <b>a:link </b>(Estado normal, nunca fue visitado ni se le hizo click) { <br />
+            color: pink; <br />
+            text-decoration: none; <br />
+            border: solid 1px #d00; <br />
+            }</div> <br />
+        <div> <b>a:visited </b>(Estado cuando el link ya fue clickeado) { <br />
+            color: blue; <br />
+            border: solid 1px #d00; (Si no lo cambio acá también toma el color de borde del link, chequear si se
+            comporta siempre así) <br />
+            }</div> <br />
+        <div> <b>a:hover</b> (Estado cuando posamos el mouse sobre el link) { <br />
+            color: grey; <br />
+            text-decoration: underline; <br />
+            }</div> <br />
+        <div> <b>a:active</b> (Estado del link al clickear, durante el tiempo que lo mantengamos apretado) { <br />
+            color: black; <br />
+            }</div> <br />
+    </div>
+
+    <h3>Listas</h3>
+    <div> <b>ul</b>{ <br />
+        <b>border</b>: solid 1px #eee <br />
+        <b>background-color</b>: white; <br />
+        <b>border-radius</b>: 5px; <br />
+        <b>padding</b>: 15px; <br />
         } </div>
-    </p>
+
+    <div>
+        <b> ul li</b> (Para poder darle estilo a un elemento que esté dentro de otra etiqueta en CSS, primero se indica
+        la clase padre y después la clase a diseñar) { <br />
+        <b>list-style-type:</b> circle; (<i>upper-romman</i>=núm romanos // <i>lower-alpha</i>=abecedario //
+        <i>square</i>) <br />
+        <b>list-style-position</b>: inside; (determina si los marcadores, <i>bullets</i>, están dentro o fuera del
+        contenido de la lista<br />
+        } <br />
+    </div>
+
+    <h3>Tablas</h3>
+    <div>
+        <b>table</b>{ <br />
+            <b>width:</b> 100%; (Porcentaje horizontal de la pantalla que ocupa) <br />
+            <b>background-color:</b> white; <br />
+            <b>border-collapse:</b> collapse; (Sin espacio en las líneas internas de la tabla) <br />
+        } <br /> <br />
+        
+        <b>tr:nth-child(even)</b> (Para seleccionar filas específicas, en este caso las pares) { <br />
+            <b>background-color:</b> #baeebd; <br />
+        }  <br /> <br />
+        
+        <b>td </b>{ <br />
+            <b>border:</b> solid 1px #ddd; <br />
+            <b>padding-left:</b> 6px; <br />
+        } <br /> <br />
+        
+        <b>table th</b> (primero etiqueta padre, después hija) { <br />
+            <b>text-align:</b> start; <br />
+            <b>padding-left:</b> 6px; <br />
+            <b>background-color:</b> #4caf50; <br />
+            <b>color:</b> white; <br />
+            <b>padding-top:</b> 6px; <br />
+            <b>padding-bottom:</b> 6px; <br />
+        }<br /> <br />
+    </div>
+
 </body>
+
 </html>
