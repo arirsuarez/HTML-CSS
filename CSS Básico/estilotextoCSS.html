@@ -2,181 +2,454 @@
 <html>
 
 <head>
+    <!--Título que figura en la tab-->
     <title>Estilo texto CSS</title>
+    <!--Llamado a la configuración en CSS-->
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
-<body>
-    <p>The sound of strangers sending nothing to my mind <br />
-        Just another mad mad day on the road <br />
-        I am just living to be lying by your side <br />
-        But I'm just about a moonlight mile on down the road</p>
-    <div> <a href="https://www.instagram.com/arisuarez_">Instagram!</a> </div>
-
-    <br />
-
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ul>
-
-    <br />
-
-    <table>
-        <tr>
-            <th>Banda</th>
-            <th>Disco</th>
-            <th>Año</th>
-        </tr>
-
-        <tr>
-            <td>The Beatles</td>
-            <td>Rubber Soul</td>
-            <td>1965</td>
-        </tr>
-        <tr>
-            <td>The Rolling Stones</td>
-            <td>Sticky Fingers</td>
-            <td>1971</td>
-        </tr>
-        <tr>
-            <td>Pearl Jam</td>
-            <td>Gigaton</td>
-            <td>2020</td>
-        </tr>
-        <tr>
-            <td>The Dear Hunter</td>
-            <td>Act I</td>
-            <td>2006</td>
-        </tr>
-    </table>
-    <br />
-
-    <p id="width"><b>WIDTH</b></p>
-    <p id="maxwidth"><b>MAX-WIDTH</b></p>
+<div class="mybackground">
+    <!--Barra de Navegación-->
     <div>
-        <h2>Propiedades CSS</h2>
-        <hr />
-        <h3>Párrafo</h3>
-        <div> p { <br />
-            color: #110420; <br />
-            text-align: center; <br />
-            text-indent: 0px; (sangría). <br />
-            line-height: 1.4; (interlineado). <br />
-            font-size: 1.5em; (Se suele usar em en vez de px para que vaya adaptándose proporcionalmente a la config que
-            le dé el usuario). <br />
-            font-weight: 100 al 900; (grosor de la letra, multiplos de 100 entre 100 y 900, no todos los tipos de letra
-            aceptan los valores intermedios). <br />
-            word-spacing: 3px; <br />
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); <br />
-            } </div>
+        <ul>
+            <li><a href="#parrafo">Párrafo</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#display">Display</a></li>
+            <li><a href="#pantalla">Pantalla</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropdownbtn">Dropdown</button>
+        <div class="dropdowncontent">
+            <a href="#">Link 1</a>
+            <a href="#">Link 1</a>
+            <a href="#">Link 1</a>
+            <a href="#">Link 1</a>
+        </div>
+    </div>
+
+    <!--Modelando el párrafo-->
+
+    <body>
+
+
+        <p>The sound of strangers sending nothing to my mind <br />
+            Just another mad mad day on the road <br />
+            I am just living to be lying by your side <br />
+            But I'm just about a moonlight mile on down the road</p>
+        <div> <a href="https://www.instagram.com/arisuarez_" target="_blank">Instagram!</a> </div>
+
         <br />
+        <!--Lista de elementos-->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
 
-        <h3>Links</h3>
+        <br />
+        <!--Tablas: Head, content, footer-->
+        <table>
+            <tr>
+                <th>Banda</th>
+                <th>Disco</th>
+                <th>Año</th>
+            </tr>
 
-        <div> <b>a</b> (Estado genérico del link) { <br />
-            text-decoration: underline; <br />
-            text-transform: uppercase / lowercase / capitalize; <br />
-            letter-spacing: 3px; <br />
-            }</div> <br />
-        <div> <b>a:link </b>(Estado normal, nunca fue visitado ni se le hizo click) { <br />
-            color: pink; <br />
-            text-decoration: none; <br />
-            border: solid 1px #d00; <br />
-            }</div> <br />
-        <div> <b>a:visited </b>(Estado cuando el link ya fue clickeado) { <br />
-            color: blue; <br />
-            border: solid 1px #d00; (Si no lo cambio acá también toma el color de borde del link, chequear si se
-            comporta siempre así) <br />
-            }</div> <br />
-        <div> <b>a:hover</b> (Estado cuando posamos el mouse sobre el link) { <br />
-            color: grey; <br />
-            text-decoration: underline; <br />
-            }</div> <br />
-        <div> <b>a:active</b> (Estado del link al clickear, durante el tiempo que lo mantengamos apretado) { <br />
-            color: black; <br />
-            }</div> <br />
-    </div>
+            <tr>
+                <td>The Beatles</td>
+                <td>Rubber Soul</td>
+                <td>1965</td>
+            </tr>
+            <tr>
+                <td>The Rolling Stones</td>
+                <td>Sticky Fingers</td>
+                <td>1971</td>
+            </tr>
+            <tr>
+                <td>Pearl Jam</td>
+                <td>Gigaton</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>The Dear Hunter</td>
+                <td>Act I</td>
+                <td>2006</td>
+            </tr>
+        </table>
+        <br />
+        <!--width y max-width-->
+        <p id="width"><b>WIDTH</b></p>
+        <p id="maxwidth"><b>MAX-WIDTH</b></p>
+        <br />
+        <br />
+        <!--Imagen de gatito para explicar float. TODO: link en la imagen-->
+        <div id="float"> <b>Ejemplificación de Float</b> <br /> <br />
+            <img src="https://www.placecage.com/300/300" />
+        </div>
+        <!--Overflow, atributo que indica cómo se comporta un elemento en caso de que exceda el espacio dado-->
+        <div id="over"> <b>Ejemplificación de Overflow</b> <br />
+            <h4>Alright - Pearl Jam</h4>
+            <i> You can't hide the lies <br />
+                In the rings of a tree <br />
+                If your heart still beats free <br />
+                Keep it for yourself <br />
+                When you want to run <br />
+                And leave some part unrevealed <br />
+                Like the flight of the bee <br />
+                Keep it for yourself <br />
+                It's alright to be alone <br />
+                To listen for a heartbeat <br />
+                It's your own <br />
+                It's alright to quiet up <br />
+                To disappear in thin air <br />
+                It's your own <br />
+                Should your living truth die <br />
+                Could be an acid trip <br />
+                Leave the Eucharist whole<br />
+                Keep it for yourself <br />
+                If you tire of the game <br />
+                Hit the road towards the clouds <br />
+                Find your groove in the sound <br />
+                Keep it for yourself <br /> </i>
+        </div>
+        <br />
+        <div class="box">
+            <form>
+                <label>Nombre</label>
+                <input type="text" id="nombre" placeholder="Nombre" />
+            </form>
 
-    <h3>Listas</h3>
-    <div> <b>ul</b>{ <br />
-        <b>border</b>: solid 1px #eee <br />
-        <b>background-color</b>: white; <br />
-        <b>border-radius</b>: 5px; <br />
-        <b>padding</b>: 15px; <br />
-        } </div>
+            <label>Apellido</label>
+            <input type="text" id="apellido" placeholder="Apellido" />
+            </form>
+            <input type="submit" value="Aceptar">
+        </div>
 
-    <div>
-        <b> ul li</b> (Para poder darle estilo a un elemento que esté dentro de otra etiqueta en CSS, primero se indica
-        la clase padre y después la clase a diseñar) { <br />
-        <b>list-style-type:</b> circle; (<i>upper-romman</i>=núm romanos // <i>lower-alpha</i>=abecedario //
-        <i>square</i>) <br />
-        <b>list-style-position</b>: inside; (determina si los marcadores, <i>bullets</i>, están dentro o fuera del
-        contenido de la lista<br />
-        } <br />
-    </div>
-
-    <h3>Tablas</h3>
-    <div>
-        <b>table</b>{ <br />
-            <b>width:</b> 100%; (Porcentaje horizontal de la pantalla que ocupa) <br />
-            <b>background-color:</b> white; <br />
-            <b>border-collapse:</b> collapse; (Sin espacio en las líneas internas de la tabla) <br />
-        } <br /> <br />
-        
-        <b>tr:nth-child(even)</b> (Para seleccionar filas específicas, en este caso las pares) { <br />
-            <b>background-color:</b> #baeebd; <br />
-        }  <br /> <br />
-        
-        <b>td </b>{ <br />
-            <b>border:</b> solid 1px #ddd; <br />
-            <b>padding-left:</b> 6px; <br />
-        } <br /> <br />
-        
-        <b>table th</b> (primero etiqueta padre, después hija) { <br />
-            <b>text-align:</b> start; <br />
-            <b>padding-left:</b> 6px; <br />
-            <b>background-color:</b> #4caf50; <br />
-            <b>color:</b> white; <br />
-            <b>padding-top:</b> 6px; <br />
-            <b>padding-bottom:</b> 6px; <br />
-        }<br /> <br />
-    </div>
-
-    <br />
+</div>
+<!--CSS de cada uno de los elementos-->
+<div>
+    <h2>Propiedades CSS</h2>
     <hr />
+    <a name="parrafo"></a>
+    <h3>Párrafo</h3>
+    <div> p { <br />
+        color: #110420; <br />
+        text-align: center; <br />
+        text-indent: 0px; (sangría). <br />
+        line-height: 1.4; (interlineado). <br />
+        font-size: 1.5em; (Se suele usar em en vez de px para que vaya adaptándose proporcionalmente a la config que
+        le dé el usuario). <br />
+        font-weight: 100 al 900; (grosor de la letra, multiplos de 100 entre 100 y 900, no todos los tipos de letra
+        aceptan los valores intermedios). <br />
+        word-spacing: 3px; <br />
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); <br />
+        } </div>
     <br />
 
-    <h3>Display</h3>
-    <div>
-    Los elementos se dividen en dos formas de display, bloc (usan el 100% width) o inline (toma lo que utiliza el texto). Estás propiedades vienen intrínsecas con el elemento, pero puede ser modificado desde CSS. <br /> 
+    <h3>Links</h3>
+
+    <div> <b>a</b> (Estado genérico del link) { <br />
+        text-decoration: underline; <br />
+        text-transform: uppercase / lowercase / capitalize; <br />
+        letter-spacing: 3px; <br />
+        }</div> <br />
+    <div> <b>a:link </b>(Estado normal, nunca fue visitado ni se le hizo click) { <br />
+        color: pink; <br />
+        text-decoration: none; <br />
+        border: solid 1px #d00; <br />
+        }</div> <br />
+    <div> <b>a:visited </b>(Estado cuando el link ya fue clickeado) { <br />
+        color: blue; <br />
+        border: solid 1px #d00; (Si no lo cambio acá también toma el color de borde del link, chequear si se
+        comporta siempre así) <br />
+        }</div> <br />
+    <div> <b>a:hover</b> (Estado cuando posamos el mouse sobre el link) { <br />
+        color: grey; <br />
+        text-decoration: underline; <br />
+        }</div> <br />
+    <div> <b>a:active</b> (Estado del link al clickear, durante el tiempo que lo mantengamos apretado) { <br />
+        color: black; <br />
+        }</div> <br />
+</div>
+
+<h3>Listas</h3>
+<div> <b>ul</b>{ <br />
+    <b>border</b>: solid 1px #eee <br />
+    <b>background-color</b>: white; <br />
+    <b>border-radius</b>: 5px; <br />
+    <b>padding</b>: 15px; <br />
+    } </div>
+
+<div>
+    <b> ul li</b> (Para poder darle estilo a un elemento que esté dentro de otra etiqueta en CSS, primero se indica
+    la clase padre y después la clase a diseñar) { <br />
+    <b>list-style-type:</b> circle; (<i>upper-romman</i>=núm romanos // <i>lower-alpha</i>=abecedario //
+    <i>square</i>) <br />
+    <b>list-style-position</b>: inside; (determina si los marcadores, <i>bullets</i>, están dentro o fuera del
+    contenido de la lista<br />
+    } <br />
+</div>
+
+<h3>Tablas</h3>
+<div>
+    <b>table</b>{ <br />
+    <b>width:</b> 100%; (Porcentaje horizontal de la pantalla que ocupa) <br />
+    <b>background-color:</b> white; <br />
+    <b>border-collapse:</b> collapse; (Sin espacio en las líneas internas de la tabla) <br />
+    } <br /> <br />
+
+    <b>tr:nth-child(even)</b> (Para seleccionar filas específicas, en este caso las pares) { <br />
+    <b>background-color:</b> #baeebd; <br />
+    } <br /> <br />
+
+    <b>td </b>{ <br />
+    <b>border:</b> solid 1px #ddd; <br />
+    <b>padding-left:</b> 6px; <br />
+    } <br /> <br />
+
+    <b>table th</b> (primero etiqueta padre, después hija) { <br />
+    <b>text-align:</b> start; <br />
+    <b>padding-left:</b> 6px; <br />
+    <b>background-color:</b> #4caf50; <br />
+    <b>color:</b> white; <br />
+    <b>padding-top:</b> 6px; <br />
+    <b>padding-bottom:</b> 6px; <br />
+    }<br /> <br />
+</div>
+
+<br />
+<hr />
+<br />
+
+<h3>Display</h3>
+<div>
+    Los elementos se dividen en dos formas de display, bloc (usan el 100% width) o inline (toma lo que utiliza el
+    texto). Estás propiedades vienen intrínsecas con el elemento, pero puede ser modificado desde CSS. <br />
     <i>Los elementos se pueden volver invisibles desde CSS con display: none;</i><br /> <br />
     Los <b>bloques</b> se muestran uno abajo del otro. <br />
-            Párrafos: &lt;p /&gt; <br />
-            Títulos: &lt;h1-6 /&gt; <br />
-            Div: &lt;div /&gt; <br />
-            Formularios: &lt;form /&gt; <br />
-            Header: &lt;header /&gt; <br />
-            Footer: &lt;footer /&gt; <br />
-            Section: &lt;section /&gt; <br /> <br />
+    Párrafos: &lt;p /&gt; <br />
+    Títulos: &lt;h1-6 /&gt; <br />
+    Div: &lt;div /&gt; <br />
+    Formularios: &lt;form /&gt; <br />
+    Header: &lt;header /&gt; <br />
+    Footer: &lt;footer /&gt; <br />
+    Section: &lt;section /&gt; <br /> <br />
 
     Los <b>inlines</b> se muestran uno al lado del otro. <br />
-            Span: &lt;span /&gt; <br />
-            Links: &lt;a /&gt; <br />
-            Imágenes: &lt;img /&gt; <br />
-    </div> 
+    Span: &lt;span /&gt; <br />
+    Links: &lt;a /&gt; <br />
+    Imágenes: &lt;img /&gt; <br />
+</div>
 
-    <h3>Utilización de Pantalla</h3>
+<h3>Utilización de Pantalla</h3>
 
-    <div>
-        width != max-width <br />
-        El atributo <b>width</b> indica los pixeles que ocupa el elemento. <br />
-        El atributo <b>max-width</b> indica el porcentaje de pantalla que utiliza el elemento, aunque se indique con px. <br />
-        <i>Si utilizamos max-width y achicamos la pantalla va a seguir utilizando el mismo porcentaje que con la pantalla completa, no así el width</i>
-    </div>
+<div>
+    <b>width != max-width</b> <br />
+    El atributo <b>width</b> indica los pixeles que ocupa el elemento. <br />
+    El atributo <b>max-width</b> indica el porcentaje de pantalla que utiliza el elemento, aunque se indique con px.
+    <br />
+    <i>Si utilizamos max-width y achicamos la pantalla va a seguir utilizando el mismo porcentaje que con la
+        pantalla completa, no así el width</i> <br />
+    Podemos utilizar la posición de elemento <b>position: fixed</b> que mantiene el contenido fijo en la pantalla
+    aunque que scrolleemos.
+</div> <br />
+<div>
+    <b>Overflow</b> <br />
+    Sirve para indicar el comportamiento de un texto en un espacio: <br /> <br />
+    <b>#over </b>{ <br />
+    <b>width</b>: 300px <br />
+    <b>height</b>: 300px <br />
+    <b>border</b>: #110420; <br />
+    <b>border-style</b>: dotted; <br />
+    <b>text-align</b>: center; <br />
+    <b>padding</b>: 7px; <br />
+    <b>margin</b> : auto; <i>(centra el elemento en el layout)</i> <br />
+    <b>overflow</b>: <b>hidden</b> (oculta el contenido que no entre en la caja); <br />
+    // <b>scroll:</b> <i>auto</i> (detecta para donde necesita el scroll y lo agrega) <br /> // <i>-x/y</i>
+    (definimos scroll x o y) <br />
+    }
 
+</div> <br />
 
+<div>
+    <b>Float</b> <br />
+    Indica donde queremos que se ubique un elemento, el resto van a ocupar la pantalla que este no ocupe. <br />
+    En este caso flota a la izquierda, el resto de los elementos van a ir ubicándose a la derecha (la letra de
+    Alright). <br /> <br />
+
+    <b>#float </b>{ <br />
+    <b>text-align</b>: center; <br />
+    <b>float</b>: left; <br />
+    <b>margin-left</b>: 16px; <br />
+    <b>border-style</b>: double; <br />
+    <b>padding</b>: 7px; <br />
+    <b>border-color</b>: #110420; <br />
+    <b>overflow</b>: auto; <br />
+    <b>width</b>: 300px; <br />
+    <b>height</b>: 300px; <br />
+    } <br />
+
+    <b>img:hover</b>{ <br />
+    <b>opacity</b>: 0.8; <br />
+    }
+</div>
+
+<h3>Barra de Navegación</h3>
+<div>
+    <b>div ul</b> { <br />
+    background-color: black; <br />
+    list-style-type: none; <br />
+    margin: auto; <br />
+    padding: 0; <br />
+    left: 0; <br />
+    vertical-align: middle; <br />
+    overflow: hidden; <br />
+    position: fixed; <br />
+    top: 0; <br />
+    width: 100%; <br />
+    } <br />
+    <br />
+    <b>div li</b> { <br />
+    float: left;<br />
+    text-align: center;<br />
+    margin-top: 0;<br />
+    padding-top: 0;<br />
+
+    }<br />
+    <br />
+    <b>li a </b>{<br />
+    display: block; <br />
+    color: white; <br />
+    text-align: center; <br />
+    margin-top: 0; <br />
+    padding: 14px; <br />
+    text-decoration: none; <br />
+    width: 88px; <br />
+    background-color: black;<br />
+    }<br />
+    <br />
+    <b>li a:hover</b> { <br />
+    opacity: 0.8; <br />
+    display: block; <br />
+    color: white; <br />
+    text-align: center; <br />
+    margin-top: 0;<br />
+    padding: 14px;<br />
+    text-decoration: none;<br />
+    width: 88px;<br />
+    }<br />
+</div>
+
+<h3>Dropdown Menu</h3>
+<div>
+    <b>.dropdownbtn</b>{ <br />
+    <b>background-color</b>: green;<br />
+    <b>list-style-type</b>: none;<br />
+    <b>padding</b>: 7px;<br />
+    <b>margin-top</b>: 6px;<br />
+    <b>font-size</b>: 16px;<br />
+    <b>cursor</b>: pointer; <br />
+    }<br />
+    <br />
+    <b>.dropdown</b> {<br />
+    <b> position</b>: relative;<br />
+    <b> display</b>: inline-block;<br />
+    }<br />
+    <br />
+    <b>.dropdowncontent</b> {<br />
+    <b> display</b>: none;<br />
+    <b> position</b>: absolute; <i>referente al padre </i> <br />
+    <b> background-color</b>: grey;<br />
+    <b> min-width</b>: 160px;<br />
+    <b> box-shadow</b>: 0px 4px 8px rgba(0, 0, 0, 0.2);<br />
+    }<br />
+    <br />
+    <b> .dropdowncontent a </b> {<br />
+    <b> color</b>: black;<br />
+    <b> padding</b>: 12px 16px; <i>padding vertical - padding horizontal </i> <br />
+    <b> text-decoration</b>: none;<br />
+    <b> display</b>: block;<br />
+    }<br />
+    <br />
+    <b> .dropdowncontent a:hover</b> {<br />
+    <b> background-color</b>: #f1f1f1;<br />
+    }<br />
+    <br />
+    <b> .dropdown:hover .dropdownbtn</b> {<br />
+    <b> background-color</b>: rgb(0, 112, 0);<br />
+    }<br />
+    <br />
+    <b> .dropdown:hover .dropdowncontent</b> {<br />
+    <b> display</b>: block;<br />
+    }<br />
+</div>
+
+<h3>Formulario de Contacto</h3>
+<div>
+
+    <b>.box</b> <i>Ingresamos todo el form dentro de un div con class:"box"</i> { <br />
+    <b>background-color</b>: white;<br />
+    <b>border-radius</b>: 4px;<br />
+    <b>padding</b>: 12px 20px;<br />
+    <b>box-shadow</b>: 0px 2px 2px rgba(0, 0, 0, 0.1);<br />
+    }<br /> <br />
+    <b>input[type=text]</b><i>Todos los inputs tipo text van a tener estos parámetros</i> { <br />
+    <b>width</b>: 100%;<br />
+    <b>padding</b>: 12px 20px;<br />
+    <b>margin</b>: 8px 0px;<br />
+    <b>display</b>: inline-block;<br />
+    <b>border</b>: 1px solid #ccc;<br />
+    <b>border-radius</b>: 4px;<br />
+    <b>box-sizing</b>: border-box;<br />
+    }<br /> <br />
+
+    <b>input[type=submit]</b><i>Todos los inputs tipo submit van a tener estos parámetros</i> { <br />
+    <b> margin-top</b>: 3px; <br />
+    <b> width</b>: 100%; <br />
+    <b> background-color</b>: #4caf50; <br />
+    <b> color</b>: white; <br />
+    <b> border</b>: none;
+    <b> border-radius</b>: 4px; <br />
+    <b> cursor</b>: pointer; <br />
+    <b> padding</b>: 7px 0px; <br />
+    } <br /> <br />
+</div>3
+
+<h3>Background</h3>
+<div>
+    <b>.mybackground</b> <i>Dentro de un div ingresamos la clase mybackground</i>{ <br />
+    <b>background</b>: color - img - repeat - position - attachment; <i>Se puede ingresar todo en la misma línea en este
+        orden</i><br />
+    <b>background-color</b>: rosybrown; <br />
+    <b>background-image</b>: url('http://lorempixel.com/640/360'); <br />
+    <b>background-position</b>: center; <br />
+    <b>background-attachment</b>: scroll; <br />
+    <b>background-size</b>: cover; <br />
+    } <br /> <br />
+</div>
+
+<h3>Color y Opacidad</h3>
+<div>
+    <b>.color</b> { <br />
+    <b>rgba</b><i>red,green,blue,opacity</i>: 0-255,0-255,0-255,0-1; (Los colores entre 0 (negro) y 255 (blanco), la
+    opacidad entre 0 (transparente) y 1 (solido)).<br />
+    <b>hsl(a)</b><i>hue,saturation,lightness</i>: 0-360, 0-100%, 0-100%, (se le puede agregar opacidad 0-1);<br />
+    }<br /> <br />
+
+    <b>.gradiantes</b> { <br />
+        <b>background-image</b>: linear-gradient(dirección, primer color, segundo color) <i>Se indica la dirección *to bottom(defecto)/top/right/left* 
+        o combinando horizontales con verticales *to top left*, también se puede indicar con grados *-45deg*</i> <br />
+        <i>Se pueden indicar la cantidad de colores que se deseen.</i>; <br />
+    }<br /> <br />
+
+    <b>.sombra</b> { <br />
+    }
+</div>
 </body>
+
 
 </html>

@@ -1,6 +1,135 @@
 body {
-    backround-color: #eee;
+    background-color: rgb(199, 193, 193);
+    margin-top: 70px;
+    padding-top: 0;
+
 }
+
+.mybackground{
+    background: ;
+    background-color: rosybrown;
+    background-image: url('http://lorempixel.com/640/360');
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+
+/*Barra de Navegación*/
+div ul {
+    background-color: black;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    left: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+div li { 
+    float: left;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    padding: 14px;
+    text-decoration: none;
+    width: 88px;
+    background-color: black;
+}
+
+li a:hover {
+    opacity: 0.8;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    padding: 14px;
+    text-decoration: none;
+    width: 88px;
+}
+
+/* Dropdown Menu */
+.dropdownbtn{
+    background-color: green;
+    list-style-type: none;
+    padding: 7px;
+    margin-top: 6px;
+    font-size: 16px;
+    cursor: pointer;    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute; /*referente al padre */
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.dropdowncontent a {
+    color: black;
+    padding: 12px 16px; /* padding vertical - padding horizontal */ 
+    text-decoration: none;
+    display: block;
+}
+
+.dropdowncontent a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdownbtn {
+    background-color: rgb(0, 112, 0);
+}
+
+.dropdown:hover .dropdowncontent {
+    display: block;
+}
+
+/* Formulario */
+
+.box{
+    background-color: white;
+    border-radius: 4px;
+    padding: 12px 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+    input[type=text]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit]{
+        margin-top: 3px;
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 7px 0px;
+        
+    }
 
 p{
     padding-top: 20px;
@@ -23,26 +152,26 @@ a{
 }
 
 a:link{
-    color: pink;
+    color: white;
     text-decoration: none;
     /*Button effect 1/2 */
-    background-color: #f00;
-    border: solid 1px #d00;
+    background-color: rgb(24, 23, 23);
+    border: solid 1px rgb(0, 0, 0);
     border-radius: 5px;
     margin: 7px;
     padding: 7px;
-}
+}   
 
 a:visited{
-    color: blue;
-    border: solid 1px #d00;
+    color: whitesmoke;
+    border: solid 1px rgb(0, 0, 0);
 }
 
 a:hover{
     color: gray;
     text-decoration: underline;
     /*Button effect 2/2 */
-    background-color: #f55;
+    background-color: rgb(58, 48, 48);
     border-radius: 5px;
 }
 
@@ -65,9 +194,10 @@ ul li{
 }
 
 table{
-    width: 100%;
+    width: 50%;
     background-color: white;
     border-collapse: collapse;
+    margin: auto;
 
 
 }
@@ -104,5 +234,35 @@ table th{
     color: beige;
     text-align: center;
     margin: auto;
+    
 }
+
+#over{
+    width: 300px;
+    height: 300px;
+    border: #110420;
+    border-style: dotted;
+    text-align: center;
+    overflow: auto;
+    padding: 7px;
+    margin: auto;
+}
+
+#float{
+    text-align: center;
+    float: left;
+    margin-left: 16px;
+    border-style: double;
+    padding: 7px;
+    border-color: #110420;
+    overflow: auto;
+    width: 300px;
+    height: 300px;
+}
+
+img:hover{ 
+    opacity: 0.8;
+}
+
+
 
