@@ -130,6 +130,15 @@
         </div>
 
 </div>
+
+<div class="trans2d">
+    <h4>Ejemplo transformación 2D</h4>
+</div>
+
+<div class="transAnimadas">
+    <h4>Ejemplo Transición Animada</h4>
+</div>
+
 <!--CSS de cada uno de los elementos-->
 <div>
     <h2>Propiedades CSS</h2>
@@ -441,14 +450,38 @@
     }<br /> <br />
 
     <b>.gradiantes</b> { <br />
-        <b>background-image</b>: linear-gradient(dirección, primer color, segundo color) <i>Se indica la dirección *to bottom(defecto)/top/right/left* 
+    <b>background-image</b>: linear-gradient(dirección, primer color, segundo color) <i>Se indica la dirección *to
+        bottom(defecto)/top/right/left*
         o combinando horizontales con verticales *to top left*, también se puede indicar con grados *-45deg*</i> <br />
-        <i>Se pueden indicar la cantidad de colores que se deseen.</i>; <br />
+    <i>Se pueden indicar la cantidad de colores que se deseen.</i>; <br />
     }<br /> <br />
-
-    <b>.sombra</b> { <br />
-    }
 </div>
+
+<h3>Transformación de Elementos</h3>
+<div>
+    <h4>Transformación 2D</h4>
+    <b>.trans2d</b>{ <br />
+    <b> background-image</b>: linear-gradient(to bottom right, white, rgb(124, 124, 124)); <br />
+    <b>box-shadow</b>: 1px 2px 2px rgba(0, 0, 0, 0.2); <br />
+    <b> width</b>: 200px; <br />
+    <b> height</b>: 200px; <br />
+    <b> position</b>: relative; <br />
+    <b> transform</b>: skewX(-10deg); <i>(Rota los lados en la cantidad de grados que le indiquemos</i> <br />
+    <b> margin-left</b>: 30px; <br />
+    <b>float</b> left;  <br />
+    <b>margin-top</b> 20px; <br />
+    } <br /> <br />
+
+    <b>.trans2d:hover</b> { <br />
+    <b>transform</b>: scale(1.07, 1.07); <br />
+    } <br /> <br />
+
+
+<h4>Transiciones Animadas</h4>
+    <b>.transAnimadas</b>{ <br />
+        <b>transition</b>: 0.3s; <i>(Indicamos un valor expresado en segundos para transicionar, puede ser de todos los elementos o podemos aclarar cuál queremos que tarde)</i> <br />
+    } <br /> <br />
+    </div>
 </body>
 
 

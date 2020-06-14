@@ -6,7 +6,7 @@ body {
 }
 
 .mybackground{
-    background: ;
+    /*background: ; */
     background-color: rosybrown;
     background-image: url('http://lorempixel.com/640/360');
     background-position: center;
@@ -262,6 +262,40 @@ table th{
 
 img:hover{ 
     opacity: 0.8;
+}
+
+/* Transformación 2D */
+
+.trans2d{
+    background-image: linear-gradient(to bottom right, white, rgb(124, 124, 124));
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform: skewX(-10deg);
+    margin-left: 30px;
+    float: left;
+    margin-top: 20px;
+}
+
+.trans2d:hover {
+    transform: scale(1.07, 1.07);
+}
+
+.transAnimadas {
+    background-image: linear-gradient(to bottom right, white, rgb(124, 124, 124));
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform: skewX(-10deg);
+    margin-left: 30px;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.transAnimadas:hover {
+    transform: scale(1.07, 1.07);
 }
 
 
