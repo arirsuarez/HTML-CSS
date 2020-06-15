@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background-color: #ccc;
 }
 
 .cajaflotante{
@@ -31,4 +31,59 @@ body{
     border: none;
     padding: 5px;
     color: #000000;
+}
+
+/* Ejercicio 2 */
+
+.bred {
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 12px;
+    border-left: solid 2px red; 
+    background-color: white;
+    transition: 0.3s;
+}
+
+.bred:hover {
+    transform: scale(1.05,1.05);
+}
+
+.bgreen {
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 12px;
+    border-left: solid 2px green; 
+    background-color: white;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.bgreen:hover {
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.bblue {
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 12px;
+    border-left: solid 2px blue; 
+    background-color: white;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.bblue:hover {
+    background-color: rgb(192, 196, 245);
 }
