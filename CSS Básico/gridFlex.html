@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Grid & Flex </title>
+    <link rel="stylesheet" href="grid.css" type="text/css" />
+</head>
+
+<body>
+    <h2> Grid o Grilla </h2>
+    <div>CSS Grid es un sistema que se implementa en CSS3 para distribuir la información de manera más cómoda y simple.
+        <br />
+        Son celdas que nos permiten distribuir el contenido como si fuera una tabla (como en un excel).
+    </div> <br />
+
+    <div class="grid">
+        <div class="element header"> HEADER </div>
+        <div class="element"> B </div>
+        <div class="element"> C </div>
+    </div> <br />
+    <div class="gridArea">
+        <div class="red item-1">Header Left</div>
+        <div class="red">Header Right</div>
+        <div class="blue">Sidebar</div>
+        <div class="blue">Content</div>
+        <div class="red">Footer</div>
+        <div class="red">Footer</div>
+    </div>
+
+    <h2> Flexbox </h2>
+
+    <div class="flex">
+        <div class="pri">Abc</div>
+        <div class="seg">Bcd</div>
+        <div class="ter">Cde</div>
+        <div class="cuar">Def</div>
+        <div class="quin">Efg</div>
+     
+    </div>
+
+    <h2> Propiedades CSS </h2>
+    <hr />
+    <h3>GRID</h3>
+    <div>
+        <b>body</b> {<br />
+        background-color: rgb(199, 193, 193);<br />
+        }<br />
+        <br />
+        <b>.grid</b> {<br />
+        display: grid; <i>(Permite que todos los elementos dentro de la etiqueta <b>grid</b> se van a desplegar como
+            grilla, uno abajo del otro (una sola columna con el ancho máx), también está la opción <b>inline-grid</b>
+            que la columna ocupa lo que ocupa el elemento</i><br />
+        grid-template-rows: 30px 30px 10px; <i>(Permite indicar la altura de las filas una por una. Si no se ingresa el
+            tamaño por default toma el alto del elemento que contiene)</i> <br />
+        grid-template-columns: 5fr 2.5fr 2.5fr; <i>(Lo mismo se puede hacer con las columnas, se puede indicar el ancho
+            por sobre el total del espacio con fracciones)</i> <br />
+        /* grid-template-columns/rows: <br />
+        minmax(valorMin, valorMax); */ <i>(Le da un mínimo y un máximo a las columnas filas)</i> <br />
+        repeat(cantDeVecesQueSeRepiteElParámetro, Parámetro) */ <i>(Me permite manejar los valores agrupándolos desde el
+            primero</i> <br />
+        /* <br />
+        grid-gap: 1px 2px; <i>(Espacio entre elementos, primero el gap de las columnas, después de las filas)</i> <br />
+
+        }<br />
+        <br />
+        <b>.element</b> {<br />
+        background-color: crimson;<br />
+        }<br />
+
+        <h3>Header</h3>
+
+        <b>.header</b>{ <br />
+        grid-column: 1 / 4; <br />
+        grid-row: 1 / 3; <i>(Las columnas y filas están divididas desde la primera (parte izq. de la pantalla/top) hasta
+            la última (parte derecha de la pantalla/bottom) por líneas. <br />
+            Podemos indicarle a los elementos como comportarse (abarcar de una línea a otra mediante estos parámetros)
+            )</i> <br />
+        } <br />
+
+        <h3>Grid Area</h3>
+        <div> <b>.gridArea </b> { <br />
+            display: grid;<br />
+            grid-template-areas: "header header" <br />
+            "Sidebar Content" <br />
+            "Footer footer"; <br />
+            grid-template-rows: 2fr 7fr 1fr; <br />
+            gap: 1px 2px; <br />
+            justify-items: stretch; <br />
+            text-align: center; <br />
+            }<br />
+            <br />
+            <b>.red</b> { <br />
+            background-color: darkred; <br />
+            } <br />
+            <br />
+            <b>.blue </b>{ <br />
+            background-color: darkslateblue; <br />
+            } <br />
+            <br />
+            <b>.item-1 </b> { <i>(Para discriminar un sólo elemento de la grilla y que tenga características
+                independientes se arma una clase nueva de CSS)</i> <br />
+            align-self: center; <br />
+            justify-self: center; <br />
+            } <br />
+        </div>
+    </div> <br />
+    <h3>FLEXBOX</h3>
+    <div>
+        Se utiliza también para distribuir el contenido pero a diferencia de Grid, Flexbox utiliza una sola columna o
+        una sola fila (Grid es una grilla o tabla como un xls). <br />
+        <div>
+
+            <b>.flex</b> { <br />
+            display: flex; <br />
+            flex-flow: row wrap; <i>(indica la dirección del contenido y el comportamiento en caso de que este pase los margenes del contenedor).</i><br />
+            justify-content: space-between; <i>(Indica el comportamiento del contenido dentro del contenedor)</i> <br />            
+            } <br />
+            <b>.pri</b> { <br />
+                order: 5; <br />
+            } <br />
+             <br />
+            <b>.quin</b> { <br />
+                order: -1; <br />
+                <i>flex-grow: 1;  Crece de acuerdo al espacio que tiene disponible para utilizar <br />
+                flex-basis: 50px;  Le indica un tamaño inicial</i> <br />
+                flex: 1 50px;  <i>(Primero va el flex-grow y después flex-basis)</i>  <br />
+                align-self: center;  <i>(Alinea el contenido con respecto a su eje principal)</i>  <br />
+            } <br />
+        </div>
+    </div>
+
+</body>
+
+</html>
