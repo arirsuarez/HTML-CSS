@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic JS</title>
+</head>
+
+<body>
+    <div>
+        <h1>JAVASCRIPT</h1>
+        <h3>Funciones Básicas</h3>
+        <div>
+            <b>console.log('Hola Mundo@!')</b> <i>Imprime por consola</i> <br />
+            Para ejecutar el programa JS en Consola se ingresa el comando 'node' + espacio + 'nombreArchivo.js' <br />
+
+            <h3>TIPOS DE DATOS JS</h3>
+
+            <b>String:</b> Cadena de caracteres. Se pueden usar '...' ó "..." (comillas dobles o simples) <br />
+            <b>Boolean:</b> True or False. <br />
+            <b>Null:</b> Cuando una variable se encuentra vacía. <br />
+            <b>Number:</b> Se escribe si comillas. <br />
+            <b>Undefined:</b> No está definido. <br />
+            <b>Object:</b> Objeto (Contiene cualquier combinación de datos. Son estructuras que permiten agrupar el
+            resto de los datos). <br />
+
+            <h3>VARIABLES</h3>
+            Podemos declarar variables con: <br /> <br />
+            <b>var</b> = "Forma antigua de declarar una variable." <br />
+            <b>const</b> = Si lo definimos con const no nos va a dejar cambiar el valor que contiene la variable (si las
+            propiedades). <br />
+            <b>let</b> = Permite cambiar los valores de la variable <br /> <br />
+
+            // <b>String</b> <br />
+            let miPrimeraVariable = "Mi primera variable!" <br />
+            //console.log(miPrimeraVariable); <br />
+            <br />
+            <b>Mutabilidad:</b> Las variables pueden mutar asignándoles nuevos valores. <br />
+            miPrimeraVariable = "Ahora mutó a otro texto" <br />
+            console.log(miPrimeraVariable); <br />
+            <br />
+            // <b>Boolean</b> <br />
+            let miBooleanTrue = true <br />
+            let miBooleanFalse = false <br />
+            <br />
+            // <b>Number</b> <br />
+            let aNumber = 14 <br />
+            let anotherNumber = -33 <br />
+            let sumVar = aNumber + anotherNumber <br />
+            <br />
+            <b>console.log(aNumber, miBooleanFalse, anotherNumber);</b> <i>Imprime por consola las variables declaradas
+                anteriormente</i> <br />
+            <b>console.log(sumVar);</b> <i>Imprime por consola las variables declaradas anteriormente</i> <br />
+            <br />
+            // <b>Objeto</b> <br />
+            Para declarar propiedades dentro de un objeto se utiliza nombreDeProp + ':' + valor + ',' sin utilizar el
+            let ni var. <br />
+            <b>const miPrimerObjecto = {}</b> <br />
+            <br />
+            <b>const miObjeto</b> = { <br />
+            aNumber: 14, <br />
+            aString: "Pearl Jam", <br />
+            condition: true, <br />
+            } <br />
+            //console.log(miObjeto); <i>Imprime todos los atributos del objeto</i> <br />
+            //console.log(miObjeto.aString); <i>Imprime solo el atributo llamado aString</i> <br />
+            <br />
+            // <b>Arreglo</b>
+            <br />
+            <b>const arrEmpty = []</b> <br />
+            const myArr = [1, 2, miPrimeraVariable, miObjeto] <br />
+            //console.log(myArr); <br />
+            <br />
+            // Para insertar un elemento al arreglo se utiliza el método .push() <br />
+
+            <b>arrEmpty.push</b>(17, "Agregué el 17 y este Strng con arrEmpty.push(17 + String)"); <br />
+            // console.log(arrEmpty); <br />
+            <br />
+            <h3>OPERADORES MATEMÁTICOS</h3>
+
+            const suma = 5 + 5 <br />
+            const resta = 10 - 5 <br />
+            const multipl = 2 * 5 <br />
+            const div = 10 / 2 <br />
+            const modulo = 10 % 3 <br />
+            <br />
+            // Para sumar o restar de a 1 ++ ó -- respectivamente <br />
+            let itir = 5 <br />
+            itir++ <br />
+            <br />
+            <h3>OPERADORES DE ASIGNACIÓN</h3>
+            Permite realizar una operación matemática sobre el número que definimos y cambiar su valor: <br />
+            <br />
+            itir += 3 <br />
+            console.log(itir); <br />
+            <br />
+
+            <h3>OPERADORES DE COMPARACIÓN</h3>
+            Sirven para comparar entre distintos tipos de datos <br />
+            <br />
+            // <b>Igualdad</b> <br />
+            <br />
+            <b>const igualEstricta</b> = 5 === 5 // <i>Devuelve true</i> <br />
+            <b>const igualEstricta1</b> = 5 === "5" // <i>Devuelve false</i> <br />
+            <b>const igual</b> = 5 == 5 // <i>Devuelve true</i> <br />
+            <b>const igual1</b> = 5 == "5" // <i>Devuelve true. Compara number con string</i> <br />
+            <br />
+            // <b>Menor - Mayor</b> <br />
+            <br />
+            <b>const esMenor</b> = 5 &gt; 10 <br />
+            <b>const esMayor</b> = 10 > 5 <br />
+            <b>const menorIgual</b> = 5 &lt;= 5 <br />
+            <b>const mayorIgual</b> = 6 >= 5 <br />
+            <br />
+            // <b>Desigualdad</b> <br />
+            <br />
+            <b>const compDesigual</b> = 5 !== "5" //true <br />
+            <b>const desigual</b> = 5 != "5" //false <br />
+            <br />
+
+            <h3>OPERACIONES LÓGICAS</h3>
+            <b>Short Circuit Evaluation:</b> Evalúa hasta que se encuentre con el primer valor que corte la operación.
+            <br /> <br />
+            Or (||) evalúa hasta el primer true, el resto no lo lee. And (&&) evalúa hasta el false <br />
+            Todos los números, string, Obj, MENOS EL 0, evalúan en true. <br />
+            // <b>or || </b> <br />
+            // <b>and && </b> <br />
+            // <b>not ! </b> <br />
+            <br />
+            <b>const resultadoOr</b> = true || false // <i>Siempre que haya un true va a devolver true (busca el true,
+                sólo si todo es falso devuelve false)</i> <br />
+            <b>const resultadoAnd</b> = false && false // <i>Siempre que haya un false va a devolver false (busca el
+                false, sólo si todo es true devuelve true)</i> <br />
+            <b>const resultadoNot</b> = !true // <i>Invierte el resultado si es boolean </i><br />
+            <br />
+
+            <h3>CONTROL DE FLUJO</h3>
+            Nos permite iterar y evaluar condiciones. <br />
+            // <b>IF</b> <br />
+            if (si la condición es true) { <br />
+            Se ejecuta esto <br />
+            } <br />
+            <br />
+            <b>if(true)</b> { <br />
+            // console.log("Estoy dentro de un if"); // Imprime ese String <br />
+            } <br />
+            <br />
+            <b>if(!true)</b> { <br />
+            // console.log("Estoy dentro de un if"); // No imprime nada porque es falso <br />
+            } <br />
+            <br />
+            const edad = 5 <br />
+
+            <b>if (edad > 5 && edad &lt; 10)</b> { <br />
+            console.log("Puede jugar") <br />
+            } else { <br />
+            console.log("No puede jugar") // En este caso salta al else porque no es mayor a 5. Se imprime "No puede
+            jugar" <br />
+            } <br />
+            <br />
+            // <b>WHILE O LOOP</b> <br />
+            Queda iterando hasta el final de los cíclos a no ser que le digamos lo contrario. Siempre que sea true
+            vuelve a evaluar hasta encontrar un false. <br />
+            <b>while (si la condición a evaluar es true) </b>{ <br />
+            Se ejecuta esto <br />
+            } <br />
+            <br />
+            let x = 0 <br />
+            <b>while(x &lt; 5)</b>{ <br />
+            console.log(x); <br />
+            x++ <i>Va a imprimir 0, 1, 2, 3, 4 y sale de la evaluación</i> <br />
+            } <br />
+            <br />
+            // <b>SWITCH</b> <br />
+            <br />
+            Permite ejecutar una instrucción u otra dependiendo el valor que recibe <br />
+            <b>switch (recibe una expresión)</b> { <br />
+            case 1: { <br />
+            break; <i>Hay que indicar el break para aclararle al switch que al cumplirse deje de buscar</i> <br />
+            } <br />
+            case 2: { <br />
+            break; <br />
+            } <br />
+            deafault: <br />
+            break; <br />
+            } <br />
+            <br />
+            const bandaRock = 2 <br />
+            <br />
+            <b>switch (bandaRock)</b> { <br />
+            case 1: console.log("Silverchair"); <br />
+            break; <br />
+            case 2: console.log("Pearl Jam"); <br />
+            break; <br />
+            case 3: console.log("Dave Matthews Band"); <br />
+            break;
+            default: console.log("Me gusta el pop"); <br />
+            break; <br />
+            } <br />
+            <br />
+            // <b>FOR</b> <br />
+            <br />
+            Bastante similar a While, nos permite iterar hasta que ya no se cumpla la condición indicada. <br />
+            <b>for (valor inicial de la variable; condición que tiene que cumplir para que siga iterando; qué operación
+                tiene hacer en cada iteración) </b>{ <br />
+            Lo que quiero que se ejecute; <br />
+            } <br />
+            <br />
+            <b>for (let i = 0; i &lt; 5; i++)</b>{ <br />
+            console.log(i); // <i>Va a imprimir de 0 a 4 y sale de la iteración</i> <br />
+            } <br />
+            <br />
+            //Como acceder a los elementos de un array usando <b>for</b> <br />
+            <br />
+            const myArray = ["Silverchair", "Pearl Jam", "Dave Matthews Band", "The Dear Hunter", "Nirvana"] <br />
+            // Se puede acceder a cualquier elemento del array con myArray[número de posición empezando desde 0]; <br />
+            <br />
+            for (let i = 0; i &lt; myArray.length; i++){ <br />
+            console.log(myArray[i]); <br />
+            } <br />
+            <br />
+            <h3>FUNCIONES</h3>
+            Se utilizan para poder reutilizar código y no duplicar. En JS además de ejecutar código, las funciones
+            cumple también con ser valores. Por eso se pueden pasar como argumentos a otras funciones. <br />
+            <b>function nombreDeFuncion (argumentos)</b> { <br />
+            Lo que voy a ejecutar al llamar la función <br />
+            } <br />
+            <br />
+            <b>function iterar (arg1)</b> { <br />
+            for (let i = 0; i &lt; arg1.length; i++){ <br />
+            console.log(arg1[i]); <br />
+            } <br />
+            } <br />
+            De esta forma le podemos pasar el areglo que querramos como parámetro, iterarlo e imprimirlo sin reescribir
+            código <br />
+            <br />
+            const nombres = ["Jon", "Dave", "Lisa", "Andy", "Marketa"] <br />
+            const numeros = [1, 2, 3, 4, 14] <br />
+            <br />
+            iterar(nombres) //Imprime nombres <br />
+            iterar(numeros) //Imprime números <br />
+            <br />
+            <br />
+            <b>function sumaDeValores (a, b)</b> {<br />
+            return a + b; // <i>return se usa para reutilizar el resultado de la función sin imprimirlo en
+                consola</i><br />
+            }<br />
+            <br />
+            const resultadoSuma = sumaDeValores (2, 3) // Guardo el resultado en otra const.<br />
+            console.log(resultadoSuma);<br />
+            <br />
+
+            // <b>CALLBACK</b>
+            Es una función que se ejecuta al final de una función. <br />
+            <br />
+            <b>function sumarConCallback (a, b, cb)</b>{ <br />
+            const r = a + b; <br />
+            cb(r); <br />
+            } <br />
+            <br />
+            <b>function callback(result)</b>{ <br />
+            console.log("Resultado: ", result); <br />
+            } <br />
+            <br />
+            <b>sumarConCallback(2, 3, callback); </b> //No se pasa la función con paréntesis porque en ese caso se
+            ejecutaría ahí. Nosotros necesitamos que se ejecute andetro de la función sumarConCallback <br />
+            <br />
+
+            // <b>FUNCIONES ANÓNIMAS</b>
+            Funciones que no tienen nombre, se utilizan en un contexto donde esté ejecutada por otra función (como los
+            CallBacks), permite ser más implícitos en el código pero no se puede reutilizar <br />
+            <br />
+            <b>sumarConCallback(2, 3, function (r)</b>{<br />
+            return("Función anónima con resultado: ", r); // es lo mismo que tenemos como ejemplo en el callback pero en
+            vez de declararlo en una función diferente lo declaramos dentro del mismo argumento <br />
+            });<br />
+            <br />
+
+            // <b>FAT ARROW FUNCTION</b> <br />
+            Se escriben sin la palabra reservada function y si el código a ejecutar tiene una sola línea no hace falta
+            aclararle el return, está implícito <br />
+            <b>const fatArrowFunct = () => arg1 + arg2 </b> --------> En este caso tiene el return implícito <br />
+            <b>const faf1 = (a, b) => a + b </b> <br />
+            <b>const faf2 = (a, b) =></b> { <br />
+            return a + b; // Es lo mismo pero en la faf1 está implícito el return <br />
+            } <br />
+            <br />
+
+        </div>
+    </div>
+</body>
+
+</html>

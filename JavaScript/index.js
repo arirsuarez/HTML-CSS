@@ -41,7 +41,7 @@ const miPrimerObjecto = {}
 const miObjeto = {
     aNumber: 14,
     aString: "Pearl Jam",
-    condition: true, 
+    condition: true,
 }
 //console.log(miObjeto);
 //console.log(miObjeto.aString);
@@ -105,7 +105,7 @@ const desigual = 5 != "5" //false
 // and &&
 // not !
 
-const resultadoOr =  true || false //Siempre que haya un true va a devolver true (busca el true, sólo si todo es falso devuelve false)
+const resultadoOr = true || false //Siempre que haya un true va a devolver true (busca el true, sólo si todo es falso devuelve false)
 const resultadoAnd = false && false //Siempre que haya un false va a devolver false (busca el false, sólo si todo es true devuelve true)
 const resultadoNot = !true //Invierte el resultado si es boolean
 
@@ -113,15 +113,15 @@ const resultadoNot = !true //Invierte el resultado si es boolean
 //CONTROL DE FLUJO
 // Nos permite iterar y evaluar condiciones.
 // if (si la condición es true) { 
-    // Se ejecuta esto
+// Se ejecuta esto
 // }
 
-if(true) {
-   // console.log("Estoy dentro de un if"); // Imprime ese String
+if (true) {
+    // console.log("Estoy dentro de un if"); // Imprime ese String
 }
 
-if(!true) {
-   // console.log("Estoy dentro de un if"); // No imprime nada porque es falso
+if (!true) {
+    // console.log("Estoy dentro de un if"); // No imprime nada porque es falso
 }
 
 const edad = 5
@@ -134,46 +134,46 @@ if (edad > 5 && edad < 10) {
 
 // While o loop, queda iterando hasta el final de los cíclos a no ser que le digamos lo contrario. Siempre que sea true vuelve a evaluar hasta encontrar un false.
 // while (si la condición a evaluar es true) { 
-        // Se ejecuta esto
+// Se ejecuta esto
 // }
 
 let x = 0
-while(x < 5){
+while (x < 5) {
     // console.log(x);
     x++ // Va a imprimir 0, 1, 2, 3, 4 y sale de la evaluación
 }
 
 //Switch permite ejecutar una instrucción u otra dependiendo el valor que recibe
 // switch (recibe una expresión) {
-    // case 1: {
-        // break;
-    // }
-    // case 2: {
-        // break;
-    // }
-    // deafault:
-    // break;
+// case 1: {
+// break;
+// }
+// case 2: {
+// break;
+// }
+// deafault:
+// break;
 // }
 
 const bandaRock = 2
 
 switch (bandaRock) {
     case 1: console.log("Silverchair");
-    break;
+        break;
     case 2: console.log("Pearl Jam");
-    break;
+        break;
     case 3: console.log("Dave Matthews Band");
-    break;
+        break;
     default: console.log("Me gusta el pop");
-    break;
+        break;
 }
 
 // For (bastante similar a While), nos permite iterar hasta que ya no se cumpla la condición indicada.
 // for (valor inicial de la variable; condición que tiene que cumplir para que siga iterando; qué operación tiene hacer en cada iteración){
-    // Lo que quiero que se ejecute;
+// Lo que quiero que se ejecute;
 // }
 
-for (let i = 0; i < 5; i++){
+for (let i = 0; i < 5; i++) {
     //console.log(i); // Va a imprimir de 0 a 4 y sale de la iteración
 }
 
@@ -182,7 +182,7 @@ for (let i = 0; i < 5; i++){
 const myArray = ["Silverchair", "Pearl Jam", "Dave Matthews Band", "The Dear Hunter", "Nirvana"]
 // Se puede acceder a cualquier elemento del array con myArray[número de posición empezando desde 0];
 
-for (let i = 0; i < myArray.length; i++){
+for (let i = 0; i < myArray.length; i++) {
     //console.log(myArray[i]);
 }
 
@@ -190,11 +190,11 @@ for (let i = 0; i < myArray.length; i++){
 // Se utilizan para poder reutilizar código y no duplicar. En JS además de ejecutar código, las funciones cumple también con ser valores. Por eso se pueden pasar como argumentos
 // a otras funciones.
 // function nombreDeFuncion (argumentos) {
-    // Lo que voy a ejecutar al llamar la función
+// Lo que voy a ejecutar al llamar la función
 // }
 
-function iterar (arg1) {
-    for (let i = 0; i < arg1.length; i++){
+function iterar(arg1) {
+    for (let i = 0; i < arg1.length; i++) {
         console.log(arg1[i]);
     }
 }
@@ -208,22 +208,22 @@ const numeros = [1, 2, 3, 4, 14]
 //iterar(numeros) //Imprime números
 
 
-function sumaDeValores (a, b) {
+function sumaDeValores(a, b) {
     return a + b; // return se usa para reutilizar el resultado de la función sin imprimirlo en consola
 }
 
-const resultadoSuma = sumaDeValores (2, 3) // Guardo el resultado en otra const.
+const resultadoSuma = sumaDeValores(2, 3) // Guardo el resultado en otra const.
 // console.log(resultadoSuma);
 
 //CALLBACK
 // Es una función que se ejecuta al final de una función.
 
-function sumarConCallback (a, b, cb){
+function sumarConCallback(a, b, cb) {
     const r = a + b;
     cb(r);
 }
 
-function callback(result){
+function callback(result) {
     console.log("Resultado: ", result);
 }
 
@@ -240,6 +240,7 @@ const faf2 = (a, b) => {
 //FUNCIONES ANÓNIMAS
 // Funciones que no tienen nombre, se utilizan en un contexto donde esté ejecutada por otra función (como los CallBacks), permite ser más implícitos en el código pero no se puede reutilizar
 
-sumarConCallback(2, 3, function (r){
-    return("Función anónima con resultado: ", r); // es lo mismo que tenemos como ejemplo en el callback pero en vez de declararlo en una función diferente lo declaramos dentro del mismo argumento
+sumarConCallback(2, 3, function (r) {
+    return ("Función anónima con resultado: ", r); // es lo mismo que tenemos como ejemplo en el callback pero en vez de declararlo en una función diferente lo declaramos dentro del mismo argumento
 });
+
