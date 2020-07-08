@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Con JS</title>
+</head>
+
+<body>
+    <h2>DOM</h2>
+    <p id="textP">Ejemplo para getElementById</p>
+    <div>
+        Es el árbol html dentro de una página web. No es el código, sino la representación que se ve plasmada. <br />
+        Contiene el html, las propiedades, el CSS y la interfaz de programación standar: <br />
+        - Tiene los elementos de html definidos como objetos <br />
+        - Tiene todas sus propiedades y métodos para poder accederlos <br />
+        - Eventos de todos los elementos de html <br />
+        <b>El DOM es un estandar de como podemos ver, cambiar o eliminar elementos html dentro de la aplicación web</b> <br />
+        <br />
+        Para poder linkear el archivo html con el archivo JS, dentro de la etiqueta <b>&lt;script&gt; se lo llama con src="archivo.js"</b> después del body. <br />
+        <br />
+        // <b>getElementById</b> <br />
+        Dentro de la etiqueta que queramos llamar desde el archivo JS se ingresa un ID representativo. <br /><br /> 
+    </div>
+    <hr />
+    <div>
+        <h2>Primera Aplicación</h2>
+        <form id="todo-form">
+            <input type="text" id="todo" />
+            <input type="submit" value="Enviar" />
+        </form>
+        <ul id="todo-list">
+        </ul>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
