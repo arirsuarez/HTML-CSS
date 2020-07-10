@@ -38,7 +38,7 @@ const render = () => {
 
 
 const actualizaTodos = (todos) => {
-    const todoStrings = JSON.stringify(todos)
+    const todoStrings = JSON.stringify("todos")
     localStorage.setItem('todos', todoStrings)
 }
 
