@@ -22,4 +22,4 @@ module.exports = app
 
 // Contraseña MOngoDB: 1Dqiq5csMA608pne
 
-"mongodb+srv://lenttimaster:1Dqiq5csMA608pne@lentti-db.pku37.mongodb.net/<dbname>?retryWrites=true&w=majority"
+// "mongodb+srv://lenttimaster:1Dqiq5csMA608pne@lentti-db.pku37.mongodb.net/<dbname>?retryWrites=true&w=majority"
