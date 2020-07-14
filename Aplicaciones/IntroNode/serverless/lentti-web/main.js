@@ -1,4 +1,5 @@
 let mealsState = []
+let ruta = 'login' // login, register, orders
 
 const stringToHTML = (string) => {
     const parser = new DOMParser()
@@ -29,7 +30,7 @@ const renderOrder = (order, meals) => {
     return element
 }
 
-window.onload = () => {
+const iniForm = () => {
     const orderForm = document.getElementById('orders')
     orderForm.onsubmit = (e) => {
         e.preventDefault()
@@ -62,6 +63,9 @@ window.onload = () => {
             })
 
     }
+}
+
+const iniData = () => {
     fetch('https://serverless-silk-eight.vercel.app/api/meals')
         .then(response => response.json())
         .then(data => {
@@ -81,4 +85,15 @@ window.onload = () => {
                     listOrders.forEach(element => ordersList.appendChild(element))
                 })
         })
+}
+window.onload = () => {
+    fetch('https://serverless-silk-eight.vercel.app/api/auth/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: 'email@email.com', password: '1234' })
+    })
+  // iniForm()
+  // iniData()    
 }

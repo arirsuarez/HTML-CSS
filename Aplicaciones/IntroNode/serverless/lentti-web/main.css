@@ -35,3 +35,47 @@ ul {
 .selected{
     background-color: #eee;
 }
+
+.form-main{
+    background-color: whitesmoke;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+
+.loginbtn {
+    margin-top: 15px;
+    color: white;
+    background-color: #2288cc;
+    border-radius: 4px;
+    border: solid 0px;
+    width: calc(100% - 7px);
+    padding: 10px 15px;
+}
+
+.login-form p {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+form input {
+    width: calc(100% - 10px);
+    height: 24px;
+    padding-left: 5px;
+    background-color: #dedede;
+    border: solid 0px;
+    border-radius: 4px;
+    color: #555;
+}
+
+.block {
+    width: calc(100% - 4px);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+}
